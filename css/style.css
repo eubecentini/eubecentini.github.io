@@ -5,6 +5,15 @@
     background-size: 95%;
 }
 
+.logo-normal-container {
+    top: 75px;
+    text-align: center;
+}
+
+.logo-normal-img {
+    max-width: 80%;
+} 
+
 .info-contact {
     position: absolute;
     bottom: 60px;
@@ -15,10 +24,11 @@
 }
 
 .logo-studio { 
-    background-image: url(../logo-background.png);
+    background-image: url(../logo-estudio.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 39%;
+    background-size: 52%;
+    background-color: rgb(154, 21, 26);
 }
 
 .studio-text {
@@ -27,6 +37,7 @@
 
 .title-text, .base-text {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
 }
 
 .title-text {
@@ -42,7 +53,7 @@
 }
 
 #estudio {
-  margin-top: 791px;  
+  margin-top: 756px;  
 }
 
 .top-layer-img {
