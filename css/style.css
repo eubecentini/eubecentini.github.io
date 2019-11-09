@@ -1,5 +1,5 @@
 .logo-contact { 
-    background-image: url(../logo-background.png);
+    background-image: url(../logo-estudio.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 95%;
@@ -77,4 +77,9 @@
 .row {
     margin-right: 0;
     margin-left: 0;
+}
+
+#contacto {
+    background-color: rgb(154, 21, 26);
+    padding-top: 40px;
 }
