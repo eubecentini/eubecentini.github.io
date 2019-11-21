@@ -1,3 +1,25 @@
+#area, #contacto, #estudio, #home-logo {
+    height: 100vh;
+}
+
+#home-logo {
+    background-image: url(../background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.home-logo-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.area-container {
+    padding-top: 100px;
+} 
+
 .logo-contact { 
     background-image: url(../logo-estudio.png);
     background-repeat: no-repeat;
@@ -8,7 +30,6 @@
 .logo-normal-container {
     top: 75px;
     text-align: center;
-    padding-top: 100px;
 }
 
 .logo-normal-img {
@@ -28,12 +49,18 @@
     background-image: url(../logo-estudio.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 52%;
+    background-size: 35%;
     background-color: rgb(154, 21, 26);
 }
 
 .studio-text {
     font-size: 1.1rem;
+}
+
+.studio-text-container {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .title-text, .base-text {
@@ -51,10 +78,6 @@
 
 .contact-email, .contact-email:hover {
     color: black;
-}
-
-#estudio {
-  margin-top: 756px;  
 }
 
 .top-layer-img {
@@ -83,4 +106,8 @@
 #contacto {
     background-color: rgb(154, 21, 26);
     padding-top: 40px;
+}
+
+.title-estudio {
+    padding-top: 100px;
 }
