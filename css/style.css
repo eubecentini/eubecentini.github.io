@@ -111,3 +111,8 @@
 .title-estudio {
     padding-top: 100px;
 }
+
+.main-navbar {
+    background-color: rgb(154, 21, 26);
+    opacity: 0.95;
+}
