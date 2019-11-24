@@ -114,10 +114,5 @@
 
 .text-area-laboral, .text-area-civil, .text-area-familia, .text-area-previsional {
     display: none;
+    position: absolute;
 }
-
-.area-civil-container:hover, 
-.area-previsional-container:hover, 
-.area-familia-container:hover, 
-.area-laboral-container:hover {
-    background-color: 

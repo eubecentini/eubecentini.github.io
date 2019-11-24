@@ -92,8 +92,8 @@
       <div class="row area-container h-100">
         <div class="col text-center area-laboral-container">
           <div class="row h-100 align-items-center">
-            <div class="col">
-              <img width="100" height="100" class="img-fluid" src="Mesa de trabajo 17.png" alt="">
+            <div class="col area-col-laboral">
+              <img width="100" height="100" class="img-fluid img-laboral" src="Mesa de trabajo 17.png" alt="">
               <h3 class="title-text">LABORAL</h3>
               <p class="text-area-laboral">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -103,8 +103,8 @@
         </div>
         <div class="col text-center area-civil-container ">
           <div class="row h-100 align-items-center">
-              <div class="col">
-                <img width="100" height="100" class="img-fluid" src="Mesa de trabajo 17 copia.png" alt="">
+              <div class="col area-col-civil">
+                <img width="100" height="100" class="img-fluid img-civil" src="Mesa de trabajo 17 copia.png" alt="">
                 <h3 class="title-text">CIVIL</h3>
                 <p class="text-area-civil">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -114,8 +114,8 @@
         </div>
         <div class="col text-center area-familia-container ">
           <div class="row h-100 align-items-center">
-            <div class="col">
-              <img width="100" height="100"  class="img-fluid" src="Mesa de trabajo 17 copia 2.png" alt="">
+            <div class="col area-col-familia">
+              <img width="100" height="100"  class="img-fluid img-familia" src="Mesa de trabajo 17 copia 2.png" alt="">
               <h3 class="title-text">FAMILIA</h3>
               <p class="text-area-familia">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -125,8 +125,8 @@
         </div>
         <div class="col text-center area-previsional-container ">
             <div class="row h-100 align-items-center">
-              <div class="col">
-                <img width="100" height="100"  class="img-fluid" src="Mesa de trabajo 17 copia 3.png" alt="">
+              <div class="col area-col-previsional">
+                <img width="100" height="100"  class="img-fluid img-previsional" src="Mesa de trabajo 17 copia 3.png" alt="">
                 <h3 class="title-text">PREVISIONAL</h3>
                 <p class="text-area-previsional">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -190,14 +190,33 @@
       function showArea(areaName) {
         var areaContainer = '.area-'+areaName+'-container';
         var textArea = '.text-area-'+areaName;
+        var imgArea = '.img-'+areaName;
+        var areaCol = '.area-col-'+areaName;
+        
         
         $(areaContainer).hover(
           function() {
+            $(imgArea).animate({
+              marginBottom: "30px",
+              width: '70',
+              height: '70',
+            }, 500);
+            $(areaCol).animate({
+              marginTop: '-130px'
+            }, 500);
             $(this).css('background-color', 'rgb(236, 237, 238)');
-            $(textArea).css('display', 'block');
+            $(textArea).fadeIn(1000);
           }, function() {
+            $(imgArea).animate({
+              marginBottom: "0px",
+              width: '100',
+              height: '100',
+            }, 500);
+            $(areaCol).animate({
+              marginTop: '0px'
+            }, 500);
             $(this).css('background-color', 'white');
-            $(textArea).css('display', 'none');
+            $(textArea).fadeOut(1000);
           }
         );
       }
