@@ -89,22 +89,50 @@
       </div>
     </section>
     <section id="area">
-      <div class="row area-container">
-        <div class="col text-center py-5">
-          <img width="100" height="100" class="img-fluid py-5" src="Mesa de trabajo 17.png" alt="">
-          <h3 class="title-text">LABORAL</h3>
+      <div class="row area-container h-100">
+        <div class="col text-center area-laboral-container">
+          <div class="row h-100 align-items-center">
+            <div class="col">
+              <img width="100" height="100" class="img-fluid" src="Mesa de trabajo 17.png" alt="">
+              <h3 class="title-text">LABORAL</h3>
+              <p class="text-area-laboral">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              </p>
+            </div>            
+          </div>
         </div>
-        <div class="col text-center py-5">
-          <img width="100" height="100" class="img-fluid py-5" src="Mesa de trabajo 17 copia.png" alt="">
-          <h3 class="title-text">CIVIL</h3>
+        <div class="col text-center area-civil-container ">
+          <div class="row h-100 align-items-center">
+              <div class="col">
+                <img width="100" height="100" class="img-fluid" src="Mesa de trabajo 17 copia.png" alt="">
+                <h3 class="title-text">CIVIL</h3>
+                <p class="text-area-civil">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+              </div>  
+          </div>    
         </div>
-        <div class="col text-center py-5">
-          <img width="100" height="100"  class="img-fluid py-5" src="Mesa de trabajo 17 copia 2.png" alt="">
-          <h3 class="title-text">FAMILIA</h3>
+        <div class="col text-center area-familia-container ">
+          <div class="row h-100 align-items-center">
+            <div class="col">
+              <img width="100" height="100"  class="img-fluid" src="Mesa de trabajo 17 copia 2.png" alt="">
+              <h3 class="title-text">FAMILIA</h3>
+              <p class="text-area-familia">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col text-center py-5">
-          <img width="100" height="100"  class="img-fluid py-5" src="Mesa de trabajo 17 copia 3.png" alt="">
-          <h3 class="title-text">PREVISIONAL</h3>
+        <div class="col text-center area-previsional-container ">
+            <div class="row h-100 align-items-center">
+              <div class="col">
+                <img width="100" height="100"  class="img-fluid" src="Mesa de trabajo 17 copia 3.png" alt="">
+                <h3 class="title-text">PREVISIONAL</h3>
+                <p class="text-area-previsional">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -156,7 +184,27 @@
       }
       
       $('[data-scroll]').on('click', scrollToSection);
+
+      var areas = ['laboral', 'civil', 'familia', 'previsional'];
       
+      function showArea(areaName) {
+        var areaContainer = '.area-'+areaName+'-container';
+        var textArea = '.text-area-'+areaName;
+        
+        $(areaContainer).hover(
+          function() {
+            $(this).css('background-color', 'rgb(236, 237, 238)');
+            $(textArea).css('display', 'block');
+          }, function() {
+            $(this).css('background-color', 'white');
+            $(textArea).css('display', 'none');
+          }
+        );
+      }
+
+      for (index = 0; index < areas.length; index++ ) {
+        showArea(areas[index]);
+      }
     });
   </script>
 </body>

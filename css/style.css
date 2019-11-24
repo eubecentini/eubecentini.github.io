@@ -16,10 +16,6 @@
     padding-top: 10%;
 }
 
-.area-container {
-    padding-top: 100px;
-} 
-
 .logo-contact { 
     background-image: url(../logo-estudio.png);
     background-repeat: no-repeat;
@@ -114,5 +110,14 @@
 
 .main-navbar {
     background-color: rgb(154, 21, 26);
-    opacity: 0.95;
 }
+
+.text-area-laboral, .text-area-civil, .text-area-familia, .text-area-previsional {
+    display: none;
+}
+
+.area-civil-container:hover, 
+.area-previsional-container:hover, 
+.area-familia-container:hover, 
+.area-laboral-container:hover {
+    background-color: 
