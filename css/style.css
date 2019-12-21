@@ -114,9 +114,25 @@
 
 .main-navbar {
     background-color: rgb(154, 21, 26);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .text-area-laboral, .text-area-civil, .text-area-familia, .text-area-previsional {
     display: none;
     position: absolute;
+}
+
+.nav-item {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.main-menu .menu-item-hover:hover {
+    background-color: rgb(135, 16, 17); 
+}
+.main-menu {
+    padding-right: 0;
 }
