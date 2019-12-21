@@ -191,7 +191,18 @@ conviviente; Filiaciones (reclamo de paternidad, impugnaciones), etc.
 
       
       $('[data-scroll]').on('click', function() {
-        $(this).closest('li').css('background-color', 'rgb(135, 16, 17)');
+        var allowedSections = ['#area', '#estudio', '#contacto'];
+        var currentSection = $(this)[0].hash;
+
+        if (allowedSections.includes(currentSection)) {
+          $(this).closest('li').addClass('selected-menu-item');
+          
+          var cleanSections = allowedSections.filter(e => e !== currentSection);
+          
+          cleanSections.forEach(function(e) {
+            $("a[href='"+e+"']").closest('li').removeClass('selected-menu-item');
+          });
+        }
       });
 
       var areas = ['laboral', 'civil', 'familia', 'previsional'];

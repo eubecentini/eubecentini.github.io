@@ -133,6 +133,9 @@
 .main-menu .menu-item-hover:hover {
     background-color: rgb(135, 16, 17); 
 }
+.selected-menu-item {
+    background-color: rgb(135, 16, 17); 
+}
 .main-menu {
     padding-right: 0;
 }
