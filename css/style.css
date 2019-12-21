@@ -53,6 +53,10 @@
     font-size: 1.1rem;
 }
 
+.studio-text p {
+    text-align: justify;
+}
+
 .studio-text-container {
     padding-top: 50px;
     padding-left: 40px;
