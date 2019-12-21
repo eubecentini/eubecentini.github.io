@@ -3,17 +3,13 @@
 }
 
 #home-logo {
-    background-image: url(../background-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    height: 100%;
 }
 
 .home-logo-container {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    padding-top: 10%;
 }
 
 .logo-contact { 
@@ -24,13 +20,22 @@
 }
 
 .logo-normal-container {
-    top: 75px;1
+    top: 75px;
     text-align: center;
 }
 
 .logo-normal-img {
     max-width: 50%;
+    position: absolute;
+    z-index: 1000;
+    top: 30%;
 } 
+
+.container-logo-background {
+    width: 50%;
+    display: block;
+    text-align: center;
+}
 
 .info-contact {
     position: absolute;
