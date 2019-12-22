@@ -85,14 +85,6 @@
     color: white;
 }
 
-.top-layer-img {
-    background-color: rgb(154, 21, 26);
-    opacity: 0.75;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
 .main-menu a {
     color: white;
 }
@@ -143,4 +135,90 @@
 }
 .main-menu {
     padding-right: 0;
+}
+.area-container img {
+    width: 100px;
+}
+
+
+@media (max-width: 575.98px) {
+    .logo-normal-img {
+        top: 15%;
+    }
+    .overflow-x-on-mobile {
+        overflow-x: hidden
+    }
+    #estudio, #area {
+        height: auto;
+    }
+    .area-container img {
+        width: 50px;
+    }
+    .info-contact {
+        position: relative;
+    }
+    .contact-text, .contact-subtitle {
+        padding: 0!important;
+        text-align: center!important;
+    }
+    #area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .logo-normal-img {
+        top: 15%;
+    }
+    #estudio, #area {
+        height: auto;
+    }
+    #area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .overflow-x-on-mobile {
+        overflow-x: hidden
+    }
+    .area-container img {
+        width: 50px;
+    }
+    .info-contact {
+        position: relative;
+    }
+    .contact-text, .contact-subtitle {
+        padding: 0!important;
+        text-align: center!important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .logo-normal-img {
+        top: 15%;
+    }
+    .info-contact {
+        position: relative;
+    }
+    .area-container img {
+        width: 50px;
+    }
+    #estudio, #area {
+        height: auto;
+    }
+    .contact-text, .contact-subtitle {
+        padding: 0!important;
+        text-align: center!important;
+    }
+    .logo-contact {
+        background-size: 35%;
+    }
+}
+
+@media (min-width: 992px) {
+ /* nothing yet*/
 }
