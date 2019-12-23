@@ -120,6 +120,7 @@
 .text-area-laboral, .text-area-civil, .text-area-familia, .text-area-previsional {
     display: none;
     position: absolute;
+    text-align: justify;
 }
 
 .nav-item {
