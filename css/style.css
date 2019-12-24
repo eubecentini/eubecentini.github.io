@@ -16,7 +16,7 @@
     background-image: url(../logo-estudio.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 85%;
+    background-size: 75%;
 }
 
 .logo-normal-container {
@@ -179,6 +179,12 @@
     .float-wp-fullpage img { 
         width: 50px;
     }
+    .text-area-laboral-modal, .text-area-civil-modal, .text-area-familia-modal, .text-area-previsional-modal {    
+        font-size: 0.9rem; 
+    }
+    .area-laboral-container, .area-civil-container, .area-familia-container, .area-previsional-container {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -207,6 +213,12 @@
     }
     .float-wp-fullpage img { 
         width: 50px;
+    }
+    .text-area-laboral-modal, .text-area-civil-modal, .text-area-familia-modal, .text-area-previsional-modal {    
+        font-size: 0.9rem; 
+    }
+    .area-laboral-container, .area-civil-container, .area-familia-container, .area-previsional-container {
+        margin-top: 20px;
     }
 }
 
