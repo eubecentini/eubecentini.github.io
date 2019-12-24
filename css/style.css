@@ -143,10 +143,8 @@
 
 .float-wp-fullpage {
     position: fixed;
-    display: block;
     bottom: 0;
     right: 0;
-    z-index: 1030;
     margin: 20px;
 }
 
