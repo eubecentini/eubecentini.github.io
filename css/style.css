@@ -25,15 +25,16 @@
 }
 
 .logo-normal-img {
-    max-width: 50%;
+    max-width: 100%;
     position: absolute;
     z-index: 1000;
-    top: 30%;
+    margin-top: 20%;
 } 
 
 .container-logo-background {
     width: 50%;
     display: block;
+    position: relative;
     text-align: center;
 }
 
