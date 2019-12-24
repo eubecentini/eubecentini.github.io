@@ -67,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section id="estudio" class="logo-studio">
+    <section id="estudio" class="logo-studio d-none d-lg-block">
       <div class="row text-center">
         <div class="col text-white title-estudio">
           <h3 class="title-text">EC ABOGADOS</h3>
@@ -107,6 +107,82 @@
       </div>
     </section>
     <section id="area">
+    <div class="modal fade" id="modalLaboral" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitleLaboral" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitleLaboral">Laboral</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-area-laboral-modal">
+              Aquellas cuestiones que se deriven de una relacion laboral vigente o extinta forman parte de una rama específica dentro del derecho. En nuestro estudio usted encontrara abogados especializados en esta materia la cual tiene una normativa y procedimiento propio que merecen la atencion de un profesional capacitado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCivil" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitleCivil" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitleCivil">Civil</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-area-civil-modal">
+              Contrate nuestros servicios a los fines de darle una solucion a sus problemas relacionados con incumplimientos 
+contractuales, accidentes de transito, sucesiones, declaratorias de herederos, cobro de cheques, letras o pagarés, alquileres,
+desalojos y cualquier otra cuestion derivada de relaciones juridicas privadas.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalFamilia" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitleFamilia" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitleFamilia">Familia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-area-familia-modal">                  
+              El desconocimiento de las normas relativas al derecho de familia genera situaciones injustas e incluso ilegales. Trabajando con nosotros usted se asegura poner su problema en manos de abogados con una amplia experiencia en Divorcios; Responsabilidad parental (cuidado personal - guarda y/o alimentos de los hijos, regimen de comunicación), Compensación economica al cónyuge o 
+              conviviente; Filiaciones (reclamo de paternidad, impugnaciones), etc.
+                            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalJubilaciones" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitleJubilaciones" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitleJubilaciones">Jubilaciones</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-area-previsional-modal">
+              El derecho previsional brinda amparo a quienes por razones de su avanzada edad, enfermedad o accidente que incapacite de manera duradera para el trabajo, no puedan ejercer actividades laborales
+              comprendiendo también a las viudas y viudos de quienes obtuvieron jubilaciones o a quienes se hallaban conviviendo al momento del fallecimiento o a sus hijos menores, a quienes se les concede el beneficio en forma de pension.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <div class="row area-container h-100">
         <div class="col-lg-3 col-sm-12 text-center area-laboral-container">
           <div class="row h-100 align-items-center">
@@ -274,7 +350,22 @@ conviviente; Filiaciones (reclamo de paternidad, impugnaciones), etc.
           showArea(areas[index]);
         }
       }
-      
+
+      if (md.mobile()) {
+        $('.img-laboral').on('click', function() {
+          $('#modalLaboral').modal('toggle');
+        });
+        $('.img-civil').on('click', function() {
+          $('#modalCivil').modal('toggle');
+        }); 
+        $('.img-familia').on('click', function() {
+          $('#modalFamilia').modal('toggle');
+        });
+        
+        $('.img-previsional').on('click', function() {
+          $('#modalJubilaciones').modal('toggle');
+        });
+      }  
     });
   </script>
 </body>

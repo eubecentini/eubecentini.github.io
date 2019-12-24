@@ -179,6 +179,9 @@
     .float-wp-fullpage img { 
         width: 50px;
     }
+    .text-area-laboral-modal, .text-area-civil-modal, .text-area-familia-modal, .text-area-previsional-modal {    
+        font-size: 0.9rem; 
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -207,6 +210,9 @@
     }
     .float-wp-fullpage img { 
         width: 50px;
+    }
+    .text-area-laboral-modal, .text-area-civil-modal, .text-area-familia-modal, .text-area-previsional-modal {    
+        font-size: 0.9rem; 
     }
 }
 
