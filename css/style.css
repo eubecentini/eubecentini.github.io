@@ -141,6 +141,18 @@
     width: 100px;
 }
 
+.float-wp-fullpage {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0;
+    z-index: 1030;
+    margin: 20px;
+}
+
+.float-wp-fullpage img { 
+    width: 100px;
+}
 
 @media (max-width: 575.98px) {
     .logo-normal-img {
@@ -165,6 +177,9 @@
     #area {
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+    .float-wp-fullpage img { 
+        width: 50px;
     }
 }
 
@@ -191,6 +206,9 @@
     .contact-text, .contact-subtitle {
         padding: 0!important;
         text-align: center!important;
+    }
+    .float-wp-fullpage img { 
+        width: 50px;
     }
 }
 
