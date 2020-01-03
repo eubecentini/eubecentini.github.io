@@ -1,0 +1,254 @@
+#area, #contacto, #estudio, #home-logo {
+    height: 100vh;
+}
+
+#home-logo {
+    height: 100%;
+}
+
+.home-logo-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.logo-contact { 
+    background-image: url(../logo-estudio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.logo-normal-container {
+    top: 75px;
+    text-align: center;
+}
+
+.logo-normal-img {
+    max-width: 100%;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 20%;
+} 
+
+.container-logo-background {
+    width: 50%;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.info-contact {
+    position: absolute;
+    bottom: 60px;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+}
+
+.logo-studio { 
+    background-image: url(../logo-estudio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    background-color: rgb(154, 21, 26);
+}
+
+.studio-text {
+    font-size: 1.1rem;
+}
+
+.studio-text p {
+    text-align: justify;
+}
+
+.studio-text-container {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.title-text, .base-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+.title-text {
+    font-weight: bold;
+}
+
+.contact-subtitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-email, .contact-email:hover {
+    color: white;
+}
+
+.main-menu a {
+    color: white;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#contacto {
+    background-color: rgb(154, 21, 26);
+    padding-top: 40px;
+}
+
+.title-estudio {
+    padding-top: 100px;
+}
+
+.main-navbar {
+    background-color: rgb(154, 21, 26);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.text-area-laboral, .text-area-civil, .text-area-familia, .text-area-previsional {
+    display: none;
+    position: absolute;
+    text-align: justify;
+}
+
+.nav-item {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.main-menu .menu-item-hover:hover {
+    background-color: rgb(135, 16, 17); 
+}
+.selected-menu-item {
+    background-color: rgb(135, 16, 17); 
+}
+.main-menu {
+    padding-right: 0;
+}
+.area-container img {
+    width: 100px;
+}
+
+.float-wp-fullpage {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.float-wp-fullpage img { 
+    width: 100px;
+}
+
+@media (max-width: 575.98px) {
+    .logo-normal-img {
+        top: 15%;
+    }
+    .overflow-x-on-mobile {
+        overflow-x: hidden
+    }
+    #estudio, #area {
+        height: auto;
+    }
+    .area-container img {
+        width: 50px;
+    }
+    .info-contact {
+        position: relative;
+    }
+    .contact-text, .contact-subtitle {
+        padding: 0!important;
+        text-align: center!important;
+    }
+    #area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .float-wp-fullpage img { 
+        width: 75px;
+    }
+    .text-area-laboral-modal, .text-area-civil-modal, .text-area-familia-modal, .text-area-previsional-modal {    
+        font-size: 0.9rem; 
+    }
+    .area-laboral-container, .area-civil-container, .area-familia-container, .area-previsional-container {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .logo-normal-img {
+        top: 15%;
+    }
+    #estudio, #area {
+        height: auto;
+    }
+    #area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .overflow-x-on-mobile {
+        overflow-x: hidden
+    }
+    .area-container img {
+        width: 50px;
+    }
+    .info-contact {
+        position: relative;
+    }
+    .contact-text, .contact-subtitle {
+        padding: 0!important;
+        text-align: center!important;
+    }
+    .float-wp-fullpage img { 
+        width: 50px;
+    }
+    .text-area-laboral-modal, .text-area-civil-modal, .text-area-familia-modal, .text-area-previsional-modal {    
+        font-size: 0.9rem; 
+    }
+    .area-laboral-container, .area-civil-container, .area-familia-container, .area-previsional-container {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .logo-normal-img {
+        top: 15%;
+    }
+    .info-contact {
+        position: relative;
+    }
+    .area-container img {
+        width: 50px;
+    }
+    #estudio, #area {
+        height: auto;
+    }
+    .contact-text, .contact-subtitle {
+        padding: 0!important;
+        text-align: center!important;
+    }
+    .logo-contact {
+        background-size: 35%;
+    }
+}
+
+@media (min-width: 992px) {
+ /* nothing yet*/
+}
