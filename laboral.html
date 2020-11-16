@@ -280,7 +280,27 @@ Es aquella enfermedad que encuentra su origen en el tipo de tareas desarrolladas
   </div>
   
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  
+  <script type="text/javascript">
+  $(function () {
+$('#myDiv').floatingWhatsApp({
+    phone: '5491133359850',
+$('.floating-wpp').floatingWhatsApp({
+    phone: '554443232',
+    popupMessage: 'Hello, how can we help you?',
+    showPopup: true,
+    position: 'right',
+    autoOpen: false,
+    autoOpenTimeout: 4000,
+    message: 'I would like to order a pizza',
+    headerColor: 'crimson',
+    headerColor: 'orange',
+    headerTitle: 'Chat with us in WhatsApp!',
+});
+    $('.floating-wpp').floatingWhatsApp();
+  });
+</script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
@@ -382,27 +402,8 @@ Es aquella enfermedad que encuentra su origen en el tipo de tareas desarrolladas
         });
       }  
     });
+	  
   </script>
 </body>
-<script type="text/javascript">
-  $(function () {
-$('#myDiv').floatingWhatsApp({
-    phone: '5491133359850',
-$('.floating-wpp').floatingWhatsApp({
-    phone: '554443232',
-    popupMessage: 'Hello, how can we help you?',
-    showPopup: true,
-    position: 'right',
-    autoOpen: false,
-    autoOpenTimeout: 4000,
-    message: 'I would like to order a pizza',
-    headerColor: 'crimson',
-    headerColor: 'orange',
-    headerTitle: 'Chat with us in WhatsApp!',
-});
-    $('.floating-wpp').floatingWhatsApp();
-  });
-</script>
-
 
 </html>
