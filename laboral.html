@@ -274,24 +274,8 @@ Es aquella enfermedad que encuentra su origen en el tipo de tareas desarrolladas
     </div> -->
 	
 	<!--Div where the WhatsApp will be rendered-->  
-<div id="WAButton"></div>
-	<script type="text/javascript">  
-   $(function () {
-           $('#WAButton').floatingWhatsApp({
-               phone: '+5493518521957', //WhatsApp Business phone number
-               headerTitle: 'Asesorate con nosotros!', //Popup Title
-               popupMessage: 'Buenos días, en qué podemos ayudarte?', //Popup Message
-               showPopup: true, //Enables popup display
-               buttonImage: '<img src="whatsapp.svg" />', //Button Image
-               //headerColor: 'crimson', //Custom header color
-               //backgroundColor: 'crimson', //Custom background button color
-               position: "right", //Position: left | right
-	       autoOpenTimeout: '1'    
-
-           });
-       });
-</script>  
-
+<div id="floating-wpp"></div>
+	
 	
   </div>
   
@@ -400,5 +384,25 @@ Es aquella enfermedad que encuentra su origen en el tipo de tareas desarrolladas
     });
   </script>
 </body>
+<script type="text/javascript">
+  $(function () {
+$('#myDiv').floatingWhatsApp({
+    phone: '5491133359850',
+$('.floating-wpp').floatingWhatsApp({
+    phone: '554443232',
+    popupMessage: 'Hello, how can we help you?',
+    showPopup: true,
+    position: 'right',
+    autoOpen: false,
+    autoOpenTimeout: 4000,
+    message: 'I would like to order a pizza',
+    headerColor: 'crimson',
+    headerColor: 'orange',
+    headerTitle: 'Chat with us in WhatsApp!',
+});
+    $('.floating-wpp').floatingWhatsApp();
+  });
+</script>
+
 
 </html>
